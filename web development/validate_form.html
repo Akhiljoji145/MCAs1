@@ -6,9 +6,14 @@
     <title>Document</title>
     <script type="text/javascript">
         function validate() {
-            var usernameElements = document.getElementsByName('username');
-            if (usernameElements.length > 0 && usernameElements[0].value == "") {
-                alert("Enter a username");
+            var user = document.getElementsByName('username');
+            var fname= document.getElementsByName('fname');
+            var lname= document.getElementsByName('lname');
+            var gender= document.getElementsByName('gender');
+            var lname= document.getElementsByName('pass');
+            if(user.length<0)
+            {
+                
             }
         }
     </script>    
