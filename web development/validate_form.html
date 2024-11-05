@@ -5,15 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="text/javascript">
-        function validate() {
+        function validate() 
+        {
             var user = document.getElementsByName('username');
-            var fname= document.getElementsByName('fname');
-            var lname= document.getElementsByName('lname');
-            var gender= document.getElementsByName('gender');
-            var lname= document.getElementsByName('pass');
-            if(user.length<0)
-            {
-                
+            var fname=document.getElementsByName('fname');
+            var lname=document.getElementsByName('lname');
+            var gender=document.getElementsByName('gender');
+            var pass=document.getElementsByName('pass')
+            if (user[0].value == "") {
+                alert("Enter a username");
+            }
+            if (fname[0].value == "") {
+                alert("Enter a firstname");
+            }
+            if (lname[0].value == "") {
+                alert("Enter a lastname");
+            }
+            if (gender.length<0 && gender[0].value == "") {
+                alert("Enter a gender");
+            }
+            if (pass[0].value == "") {
+                alert("Enter a password");
             }
         }
     </script>    
