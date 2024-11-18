@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript" type="text/javascript">
+        function add(event) {
+            event.preventDefault();
+            var s = document.getElementsByName("str1")[0].value;
+            var a = parseFloat(document.getElementsByName("num")[0].value);
+            var b = parseFloat(document.getElementsByName("power")[0].value);
+            var sl = s.length;
+            var sli = s.slice(5, 11);
+            var c = Math.pow(a, b);      
+            var n = Math.sqrt(a);        
+            var m = Math.ceil(a);
+            var i = Math.floor(a);
+            document.getElementsByName("strlen")[0].value = sl;
+            document.getElementsByName("strsli")[0].value = sli;
+            document.getElementsByName("num_power")[0].value = c;
+            document.getElementsByName("sqr")[0].value = n;
+            document.getElementsByName("ceil")[0].value = m;
+            document.getElementsByName("floor")[0].value = i;
+        }
+    </script>
+</head>
+<body>
+    <label>Enter a string</label><br>
+    <input type="text" name="str1"><br><br>
+
+    <label>Enter number: </label>
+    <input type="text" name="num"><br><br>
+
+    <label>Enter power: </label>
+    <input type="text" name="power"><br><br>
+
+    <button onclick="add(event)">Get Result</button><br><br>
+
+    <label>Length of the string</label>
+    <input type="text" name="strlen" readonly><br><br>
+
+    <label>Slice string (5-10)</label><br>
+    <input type="text" name="strsli" readonly><br><br>
+
+    <label>Power of the number</label><br>
+    <input type="text" name="num_power" readonly><br><br>
+
+    <label>Square root of the number</label><br>
+    <input type="text" name="sqr" readonly><br><br>
+
+    <label>Ceil of the number</label><br>
+    <input type="text" name="ceil" readonly><br><br>
+
+    <label>Floor of the number</label><br>
+    <input type="text" name="floor" readonly>
+</body>
+</html>
