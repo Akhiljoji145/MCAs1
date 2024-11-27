@@ -1,5 +1,8 @@
-a=int(input("Enter a number"))
-if a%4==0 and a%100!=0 or a%400==0:
-    print(f"{a} is a leap year")
+date=int(input("enter the date: "))
+month=int(input("enter the month: "))
+year=int(input("Enter the year: "))
+print(f'{date}-{month}-{year}')
+if year%4==0 and year%100!=0 or year%400==0:
+    print(f"{year} is a leap year")
 else:
-    print(f"{a} is not a leap year")
+    print(f"{year} is not a leap year")
