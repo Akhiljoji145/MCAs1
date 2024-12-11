@@ -9,7 +9,7 @@ $array=array(array('Ms dhoni',40),array('virat kholi',33),array('sachin tendulka
     <title>Document</title>
 </head>
 <body>
-    <table style="border: 1px solid black;">
+    <table border="1px solid black" align="center" style="border-collapse:collapse; height:400px;width:400px;">
         <tr>
             <th>Name</th>
             <th>Age</th></tr>
